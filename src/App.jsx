@@ -4,6 +4,7 @@ import QuickNav from './components/QuickNav.jsx';
 import Section from './components/Section.jsx';
 import ExerciseSection from './components/ExerciseSection.jsx';
 import Footer from './components/Footer.jsx';
+import VertebraLogo from './components/VertebraLogo.jsx';
 import { guideContent } from './data/guideContent.js';
 
 function useScrollProgress() {
@@ -105,6 +106,21 @@ function BodyText({ paragraphs }) {
       {paragraphs.map((paragraph) => (
         <p key={paragraph}>{paragraph}</p>
       ))}
+    </div>
+  );
+}
+
+function FinalClosing({ closing }) {
+  return (
+    <div className="final-closing reveal" aria-label={closing.brand}>
+      <div className="final-closing-logo">
+        <VertebraLogo variant="closing" />
+      </div>
+      <div className="final-closing-copy">
+        <strong>{closing.brand}</strong>
+        <span>{closing.guide}</span>
+        <small>{closing.event}</small>
+      </div>
     </div>
   );
 }
@@ -316,6 +332,7 @@ export default function App() {
           className="final-section"
         >
           <BodyText paragraphs={content.final.text} />
+          <FinalClosing closing={content.final.closing} />
         </Section>
       </main>
 

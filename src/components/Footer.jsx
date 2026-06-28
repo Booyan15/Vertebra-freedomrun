@@ -7,7 +7,7 @@ export default function Footer({ content }) {
         <VertebraLogo variant="footer" />
       </span>
       <strong>{content.final.brand}</strong>
-      <span>{content.final.slogan}</span>
+      {content.final.slogan && <span>{content.final.slogan}</span>}
     </footer>
   );
 }
