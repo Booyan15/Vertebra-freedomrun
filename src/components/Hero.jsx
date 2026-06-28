@@ -21,7 +21,7 @@ export default function Hero({ content }) {
         <p className="hero-event">
           {content.meta.eventSupport}
         </p>
-        <p className="hero-slogan">{content.meta.slogan}</p>
+        {content.meta.slogan && <p className="hero-slogan">{content.meta.slogan}</p>}
         <p className="hero-welcome">{content.meta.welcome}</p>
         <div className="hero-actions">
           <a className="button primary" href="#warmup">

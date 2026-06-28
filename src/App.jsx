@@ -316,10 +316,6 @@ export default function App() {
           className="final-section"
         >
           <BodyText paragraphs={content.final.text} />
-          <div className="final-brand reveal">
-            <strong>{content.final.brand}</strong>
-            <span>{content.final.slogan}</span>
-          </div>
         </Section>
       </main>
 
