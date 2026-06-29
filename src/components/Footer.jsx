@@ -11,11 +11,6 @@ export default function Footer({ content }) {
           <span key={line}>{line}</span>
         ))}
       </div>
-      <div className="footer-message">
-        {content.final.text.map((line) => (
-          <p key={line}>{line}</p>
-        ))}
-      </div>
     </footer>
   );
 }

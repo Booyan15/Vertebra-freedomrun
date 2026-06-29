@@ -1267,6 +1267,10 @@ li::before {
   box-shadow: 0 0 14px rgba(242, 102, 50, 0.22);
 }
 
+.final-section {
+  padding-bottom: 58px;
+}
+
 .footer {
   display: grid;
   justify-items: center;
@@ -1296,19 +1300,6 @@ li::before {
   font-size: clamp(0.94rem, 3vw, 1.06rem);
   font-weight: 800;
   line-height: 1.45;
-}
-
-.footer-message {
-  display: grid;
-  gap: 4px;
-  max-width: 680px;
-  color: var(--muted);
-  font-size: clamp(1rem, 3vw, 1.12rem);
-  line-height: 1.7;
-}
-
-.footer-message p {
-  margin: 0;
 }
 
 .floating-warmup {
