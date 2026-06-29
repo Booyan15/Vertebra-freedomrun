@@ -1271,6 +1271,10 @@ li::before {
   padding-bottom: 58px;
 }
 
+.final-section .body-text p:nth-last-child(-n + 3) {
+  font-style: italic;
+}
+
 .footer {
   display: grid;
   justify-items: center;
