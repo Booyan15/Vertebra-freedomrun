@@ -1271,7 +1271,7 @@ li::before {
   padding-bottom: 58px;
 }
 
-.final-section .body-text p:nth-last-child(-n + 3) {
+.final-section .body-text p:nth-last-child(-n + 2) {
   font-style: italic;
 }
 
