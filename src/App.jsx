@@ -308,15 +308,6 @@ export default function App() {
           </div>
         </Section>
 
-        <Section
-          id={content.final.id}
-          eyebrow={content.final.eyebrow}
-          title={content.final.title}
-          accent="teal"
-          className="final-section"
-        >
-          <BodyText paragraphs={content.final.text} />
-        </Section>
       </main>
 
       <a className="floating-warmup" href="#warmup">

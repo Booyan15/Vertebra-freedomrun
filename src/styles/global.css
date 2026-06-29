@@ -1267,23 +1267,15 @@ li::before {
   box-shadow: 0 0 14px rgba(242, 102, 50, 0.22);
 }
 
-.final-section {
-  padding-bottom: 58px;
-}
-
 .footer {
   display: grid;
   justify-items: center;
-  gap: 8px;
+  gap: 14px;
   border-top: 1px solid rgba(20, 39, 50, 0.08);
-  padding: 32px 18px 90px;
+  padding: 40px 18px 92px;
   color: var(--muted);
   text-align: center;
   background: #ffffff;
-}
-
-.footer strong {
-  color: var(--text);
 }
 
 .footer-logo-wrap {
@@ -1295,6 +1287,28 @@ li::before {
 
 .vertebra-logo-footer {
   height: auto;
+}
+
+.footer-slogan {
+  display: grid;
+  gap: 3px;
+  color: var(--teal-dark);
+  font-size: clamp(0.94rem, 3vw, 1.06rem);
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.footer-message {
+  display: grid;
+  gap: 4px;
+  max-width: 680px;
+  color: var(--muted);
+  font-size: clamp(1rem, 3vw, 1.12rem);
+  line-height: 1.7;
+}
+
+.footer-message p {
+  margin: 0;
 }
 
 .floating-warmup {

@@ -2,12 +2,20 @@ import VertebraLogo from './VertebraLogo.jsx';
 
 export default function Footer({ content }) {
   return (
-    <footer className="footer">
+    <footer className="footer" aria-label={content.final.brand}>
       <span className="footer-logo-wrap">
         <VertebraLogo variant="footer" />
       </span>
-      <strong>{content.final.brand}</strong>
-      {content.final.slogan && <span>{content.final.slogan}</span>}
+      <div className="footer-slogan">
+        {content.final.slogan.map((line) => (
+          <span key={line}>{line}</span>
+        ))}
+      </div>
+      <div className="footer-message">
+        {content.final.text.map((line) => (
+          <p key={line}>{line}</p>
+        ))}
+      </div>
     </footer>
   );
 }
